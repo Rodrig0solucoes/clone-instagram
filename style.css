@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.externa{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.foto_celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.foto_celular img{
+    height: 50rem;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid lightgray;
+}
+
+.container:nth-child(1){
+    min-height: 19rem;
+}
+
+.logo_instagram{
+    height: 3rem;
+}
+
+.foto_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto_perfil img{
+    height: 6rem;
+}
+
+.insta_login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.insta_logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not_voce{
+    color: rgb(160,160,160);
+}
+
+
+.not_conta{
+
+    color: rgb(160,160,160);
+}
+
+.not_conta span{
+    color: #0095f6;
+}
+
+.aplicativos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;/*mesmo espaço dos lados mesmo espaço do meio*/
+    align-items: center;
+    padding: 1rem;
+}
+
+.app_download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app_download:nth-child(1){
+    background-image: url('./img/apple-button.png');
+}
+
+.app_download:nth-child(2){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.baixar_app{
+    font-weight: 600;
+}
+
+/* media queries*/
+
+@media (max-width: 1024px) {
+    .externa {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .body {
+        background-color: #ffffff;
+    }
+    .container{
+        border: 1px solid transparent;
+    }
+    .externa {
+        width: 90%;
+    }
+
+    .foto_celular {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+}
